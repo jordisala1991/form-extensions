@@ -63,7 +63,7 @@ class SonataFormExtensionTest extends AbstractExtensionTestCase
 
         $containerBuilder->expects($this->exactly(2))->method('prependExtensionConfig')->withConsecutive(
             ['sonata_form', ['form_type' => 'standard']],
-            ['sonata_form', ['form_type' => 'horizontal']
+            ['sonata_form', ['form_type' => 'horizontal']]
         );
 
         $extension = new SonataFormExtension();
